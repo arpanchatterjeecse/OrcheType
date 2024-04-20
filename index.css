@@ -8,35 +8,53 @@
 
 #h0 {
   text-align: center;
-  text-decoration: wavy;
+  text-decoration: line-through 1px rgb(217, 255, 0);
+
+  /* text-decoration: wavy; */
   padding-top: 40px;
   padding-bottom: 0px;
-
-  color: #1995AD;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 35px #fff,
+    0 0 42px rgb(255, 0, 0),
+    0 0 82px rgb(229, 255, 0),
+    0 0 92px rgb(230, 255, 4);
+  font-size: 3.6em;
+  font-weight: 600;
+  /* font-variant: inherit; */
+  color: #25525c;
+  /* margin-bottom: 0%; */
 }
 
 body {
   background-color: rgb(148, 205, 232);
   text-align: center;
   font-size: x-large;
+  height: 40em;
 }
 
 
 #main-container {
-  background-color: #1995AD;
+  background-color: #266674;
   min-height: 100px;
   min-width: 50vw;
-  max-height: 60vh;
+  max-height: 100vh;
   height: fit-content;
   width: 80vw;
-
+  display: flex;
+  justify-content: flex-start;
+  text-align: end;
   padding: 5px;
   align-self: center;
   border-radius: 0.7rem;
   position: relative;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
   margin: auto;
-  margin-top: 100px;
+  margin-top: 40px;
+  color: rgb(173, 119, 39);
   display: grid;
+
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2rem;
 
@@ -54,29 +72,25 @@ body {
   line-height: 2rem;
   min-width: 2rem;
   width: fill;
+  height: 5px;
   /* font-family: 'JetBrains Mono', monospace;  */
   overflow-y: scroll;
-  scroll-behavior: smooth;
+  scroll-behavior: inherit;
 }
 
-#input-box {
-  /* border: 1px rgb(244, 238, 224) solid; */
-  overflow-y: auto;
-  /* height: 9rem; */
 
-}
 
 #input-field {
-  /* font-family: 'Courier New', Courier, monospace; */
-  /* font-size: x-large; */
-  color: #184d59;
+  font-size: x-large;
+  color: #1995AD;
   background: none;
   outline: none;
   border: none;
-  height: 0;
   width: 100%;
-  /*--debug purposes--*/
-  /* border: 1px red solid; */
+  height: 0px;
+  /* Use auto height to adjust based on content */
+  /* max-height: 200px;  */
+  overflow-y: auto;
 }
 
 #start-bttn {
@@ -91,7 +105,7 @@ body {
   border: none;
   background-color: #A1D6E2;
   border-radius: 10px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
 }
 
 #stats-container {
@@ -106,22 +120,25 @@ body {
   align-self: center;
   justify-items: center;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: #1995AD;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  box-shadow: 0 4px 4px black;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+
 }
 
 #accuracy,
 #time,
 #wpm {
-  background-color: #A1D6E2;
+  background-color: #25525c;
   width: 100%;
   margin: 10px;
   border-radius: 5px;
-  color: #1995AD;
+  color: #A1D6E2;
+  box-shadow: 3px 3px 2px rgba(255, 255, 255, 0.6);
+
   padding: 5px;
   /* font-family: JetBrains Mono; */
   font-weight: bold;
@@ -145,11 +162,11 @@ body {
 }
 
 .wrong {
-  background-color: rgb(221, 112, 81);
+  background-color: rgb(236, 75, 30);
 }
 
 .correct {
-  color: rgb(244, 238, 224);
+  color: rgb(43, 156, 43);
 }
 
 .background-fix {
