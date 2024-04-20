@@ -78,7 +78,7 @@ function start() {
   startBttn.innerHTML = 'Start'
   inputArea.value = ''
   resetVal()
-  paragraphBox.innerHTML = " आ गया मा चुदाने ?"
+  paragraphBox.innerHTML = "Built By Chatterjee/Arpan"
 }
 
 
