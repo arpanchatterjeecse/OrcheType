@@ -1,169 +1,174 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,474;1,474&display=swap');
+  margin: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
 
-  
-  }
-  #h0{
-    text-align: center;
-    text-decoration: wavy;
-    padding-top: 40px;
-    padding-bottom: 0px;
-    
-    color: #1995AD;
-  }
-  body {
-    background-color: rgb(148, 205, 232);
-    text-align: center;
-    font-size: x-large;
-  }
-  
-  
-  #main-container {
-    background-color: #1995AD;
-    min-height: 100px;
-    min-width: 50vw;
-    max-height: 60vh;
-    height: fit-content;
-    width: 80vw;
-  
-    padding: 5px;
-    align-self:center;
-    border-radius: 0.7rem;
-    position: relative;
-    margin: auto;
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2rem;
-  
-  } 
-  
-  #paragraph-box {
-    background-color: #A1D6E2;
-    color: #1995AD;
-    margin: 2.5px;
-    min-height: 4rem;
-    border-radius: 0.5rem;
-    text-align: left;
-    padding: 1rem;
-    margin-bottom: 0.5rem;
-    line-height: 2rem;
-    min-width: 2rem;
-    width: fill;
-    /* font-family: 'JetBrains Mono', monospace;  */
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
-  
-  #input-box {
-    /* border: 1px rgb(244, 238, 224) solid; */
-    overflow-y: auto;
-    /* height: 9rem; */
-  
-  }
-  
-  #input-field {
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* font-size: x-large; */
-    color: #184d59;
-    background: none;   
-    outline: none;
-    border: none;
-    height: 0;
-    width: 100%;
-    /*--debug purposes--*/ 
-    /* border: 1px red solid; */
-  }
-  
-  #start-bttn{
-    width: 100px;
-    height: 50px; 
-    color: #1995AD;
-    position: relative;
-    margin: 10px ; 
-    /* font-family: JetBrains Mono; */
-    font-size: large;
-    font-weight: 700;
-    border: none;
-    background-color: #A1D6E2;
-    border-radius: 10px;
-    box-shadow:0 5px 5px rgba(0, 0, 0, 0.4);
-  }
-  
-  #stats-container {
-    /* width: 620px; */
-    width: fit-content;
-    height: 200px;
-    display: grid;
-    grid-template-columns:repeat(3, 1fr); 
-    grid-template-rows: 200px;
-    column-gap: 25px;
-    text-align: center;
-    align-self: center;
-    justify-items: center;
-    margin: auto;
-    margin-top: 20px;
-    background-color: #1995AD;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    box-shadow:0 4px 4px black;
-  }
-  
-  #accuracy, #time, #wpm {
-    background-color: #A1D6E2;
-    width: 100%; 
-    margin: 10px;
-    border-radius: 5px;
-    color: #1995AD;
-    padding: 5px;
-    /* font-family: JetBrains Mono; */
-    font-weight: bold;
-  }
-  
-  #wpm_con, #time_con {
-    height: 85%;
-    padding: 20px; 
-    font-size: 5rem; 
-  }
-  
-  #acc_con {
-    height: 85%;
-    padding: 20px;
-    font-size: 5rem;
-  }
-  
-  #small-sec {
-    font-size: 0.7rem;
-  }
-  
-  .wrong {
-    background-color: rgb(221, 112, 81);
-  }
-  
-  .correct {
-    color: rgb(244, 238, 224);
-  }
-  
-  .background-fix {
-    background-color: rgb(109, 93, 110);
-  }
-  
-  .cursor-highlight {
-    background-color: rgba(57, 54, 70, 0.4);
-  }
-  
-  .space-wrong{
-    background-color: Red;
-  }
-  
-  .hidden {
-    visibility: hidden;
-  }
-  
-  .broken {
-    background-color: red;
-    color: green;
-  }
+
+}
+
+#h0 {
+  text-align: center;
+  text-decoration: wavy;
+  padding-top: 40px;
+  padding-bottom: 0px;
+
+  color: #1995AD;
+}
+
+body {
+  background-color: rgb(148, 205, 232);
+  text-align: center;
+  font-size: x-large;
+}
+
+
+#main-container {
+  background-color: #1995AD;
+  min-height: 100px;
+  min-width: 50vw;
+  max-height: 60vh;
+  height: fit-content;
+  width: 80vw;
+
+  padding: 5px;
+  align-self: center;
+  border-radius: 0.7rem;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2rem;
+
+}
+
+#paragraph-box {
+  background-color: #A1D6E2;
+  color: #1995AD;
+  margin: 2.5px;
+  min-height: 4rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 2rem;
+  min-width: 2rem;
+  width: fill;
+  /* font-family: 'JetBrains Mono', monospace;  */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+#input-box {
+  /* border: 1px rgb(244, 238, 224) solid; */
+  overflow-y: auto;
+  /* height: 9rem; */
+
+}
+
+#input-field {
+  /* font-family: 'Courier New', Courier, monospace; */
+  /* font-size: x-large; */
+  color: #184d59;
+  background: none;
+  outline: none;
+  border: none;
+  height: 0;
+  width: 100%;
+  /*--debug purposes--*/
+  /* border: 1px red solid; */
+}
+
+#start-bttn {
+  width: 100px;
+  height: 50px;
+  color: #1995AD;
+  position: relative;
+  margin: 10px;
+  /* font-family: JetBrains Mono; */
+  font-size: large;
+  font-weight: 700;
+  border: none;
+  background-color: #A1D6E2;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#stats-container {
+  /* width: 620px; */
+  width: fit-content;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px;
+  column-gap: 25px;
+  text-align: center;
+  align-self: center;
+  justify-items: center;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #1995AD;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px black;
+}
+
+#accuracy,
+#time,
+#wpm {
+  background-color: #A1D6E2;
+  width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  color: #1995AD;
+  padding: 5px;
+  /* font-family: JetBrains Mono; */
+  font-weight: bold;
+}
+
+#wpm_con,
+#time_con {
+  height: 85%;
+  padding: 20px;
+  font-size: 5rem;
+}
+
+#acc_con {
+  height: 85%;
+  padding: 20px;
+  font-size: 5rem;
+}
+
+#small-sec {
+  font-size: 0.7rem;
+}
+
+.wrong {
+  background-color: rgb(221, 112, 81);
+}
+
+.correct {
+  color: rgb(244, 238, 224);
+}
+
+.background-fix {
+  background-color: rgb(109, 93, 110);
+}
+
+.cursor-highlight {
+  background-color: rgba(57, 54, 70, 0.4);
+}
+
+.space-wrong {
+  background-color: Red;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.broken {
+  background-color: red;
+  color: green;
+}
