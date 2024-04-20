@@ -78,7 +78,7 @@ function start() {
   startBttn.innerHTML = 'Start'
   inputArea.value = ''
   resetVal()
-  paragraphBox.innerHTML = "Built By Chatterjee/Arpan"
+  paragraphBox.innerHTML = " Built By Chatterjee/Arpan "
 }
 
 
@@ -201,23 +201,23 @@ function ignored_Key(e_key) {
     'Alt': 0,
     'Control': 0,
   }
-  return ignore_keys[e_key] ?? -1
+  return ignore_keys[e_key] ?? -5
 }
 
 let scroll_actual_val = 0
 inputArea.addEventListener('keydown', (e) => {
   let name = e.key
   if (name == 'Backspace') {
-    if (curr_input_array.length > spanArray.length * 0.90) {
+    if (curr_input_array.length > spanArray.length * 0.30) {
       paragraphBox.scrollLeft -= 0
     } else {
-      paragraphBox.scrollLeft -= spanArray.length / 10
+      paragraphBox.scrollLeft -= spanArray.length / 20
     }
   }
   else if (ignored_Key(name) == 0) paragraphBox.scrollLeft += 0
   else {
     // scroll_left_val += spanArray.length / 10
-    paragraphBox.scrollLeft += spanArray.length / 10
+    paragraphBox.scrollLeft += spanArray.length / 20
     scroll_actual_val += spanArray.length / 10
   }
 
