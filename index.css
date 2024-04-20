@@ -1,7 +1,8 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    /* color: rgb(244, 238, 224); */
+    font-family:montserrat;
+
   
   }
   #h0{
@@ -9,18 +10,18 @@
     text-decoration: wavy;
     padding-top: 40px;
     padding-bottom: 0px;
-    font-family: 'JetBrains Mono', monospace;
-    color: rgb(115, 95, 132);
+    
+    color: #1995AD;
   }
   body {
-    background-color: rgb(47, 45, 56);
+    background-color: rgb(148, 205, 232);
     text-align: center;
     font-size: x-large;
   }
   
   
   #main-container {
-    background-color: rgb(79, 69, 87);
+    background-color: #1995AD;
     min-height: 100px;
     min-width: 50vw;
     max-height: 60vh;
@@ -40,8 +41,8 @@
   } 
   
   #paragraph-box {
-    background-color: rgb(109, 93, 110);
-    color: rgba(244, 238, 224, 0.5);
+    background-color: #A1D6E2;
+    color: #1995AD;
     margin: 2.5px;
     min-height: 4rem;
     border-radius: 0.5rem;
@@ -51,7 +52,7 @@
     line-height: 2rem;
     min-width: 2rem;
     width: fill;
-    font-family: 'JetBrains Mono', monospace; 
+    /* font-family: 'JetBrains Mono', monospace;  */
     overflow-y: scroll;
     scroll-behavior: smooth;
   }
@@ -64,9 +65,9 @@
   }
   
   #input-field {
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     /* font-size: x-large; */
-    color: rgb(79, 69, 87);
+    color: #184d59;
     background: none;   
     outline: none;
     border: none;
@@ -79,21 +80,22 @@
   #start-bttn{
     width: 100px;
     height: 50px; 
-    color: rgba(244, 238, 224);
+    color: #1995AD;
     position: relative;
-    margin: 10px; 
-    font-family: JetBrains Mono;
+    margin: 10px ; 
+    /* font-family: JetBrains Mono; */
     font-size: large;
+    font-weight: 700;
     border: none;
-    background-color: rgb(79, 69, 87);
+    background-color: #A1D6E2;
     border-radius: 10px;
-    box-shadow:0 1px 1px rgba(244, 238, 224, 0.4);
+    box-shadow:0 5px 5px rgba(0, 0, 0, 0.4);
   }
   
   #stats-container {
     /* width: 620px; */
     width: fit-content;
-    height: 900px;
+    height: 200px;
     display: grid;
     grid-template-columns:repeat(3, 1fr); 
     grid-template-rows: 200px;
@@ -103,20 +105,21 @@
     justify-items: center;
     margin: auto;
     margin-top: 20px;
-    background-color: rgb(79, 69, 87);
+    background-color: #1995AD;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
+    box-shadow:0 4px 4px black;
   }
   
   #accuracy, #time, #wpm {
-    background-color: rgb(109, 93, 110);
+    background-color: #A1D6E2;
     width: 100%; 
     margin: 10px;
     border-radius: 5px;
-    color: rgb(244, 238, 224);
+    color: #1995AD;
     padding: 5px;
-    font-family: JetBrains Mono;
+    /* font-family: JetBrains Mono; */
     font-weight: bold;
   }
   
