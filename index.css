@@ -22,7 +22,7 @@
     0 0 92px rgb(230, 255, 4);
   font-size: 3.6em;
   font-weight: 600;
-  /* font-variant: inherit; */
+  /* font-variant: inherit; */ 
   color: #25525c;
   /* margin-bottom: 0%; */
 }
@@ -62,7 +62,7 @@ body {
 
 #paragraph-box {
   background-color: #A1D6E2;
-  color: #1995AD;
+  color: #367b8a;
   margin: 2.5px;
   min-height: 4rem;
   border-radius: 0.5rem;
@@ -82,7 +82,7 @@ body {
 
 #input-field {
   font-size: x-large;
-  color: #1995AD;
+  color: #266674;
   background: none;
   outline: none;
   border: none;
